@@ -15,18 +15,25 @@ export class AppComponent {
   spawn() {
     this.slimeIsPresent = true;
     // TODO Animation angular avec forwards
+    var element = document.getElementById("slimeyId");
+    element?.classList.remove("fadeOut");
+    element?.classList.add("fadeIn");
   }
 
   death(){
     this.slimeIsPresent = false;
     // TODO Animation angular avec forwards
-
+    var element = document.getElementById("slimeyId");
+    element?.classList.remove("fadeIn");
+    element?.classList.add("fadeOut");
     // TODO 2e animation angular en même temps
+
   }
 
   attack(){
     // TODO Jouer une animation et augmenter l'intensité du mouvement avec scale
     // TODO Jouer une autre animation avant
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
   }
 
   hit(){
